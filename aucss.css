@@ -1,0 +1,427 @@
+/* Set the background color for the body */
+body {
+    background-color: #fff2df;   
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #905c3f; 
+    height: auto;
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; 
+    padding: 5px;
+}
+
+/* Hide dropdown elements by default */
+.dropdown, .dropbtn {
+    display: none;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #fff2df;
+    width: 500px;
+    color: #905c3f;
+    padding: 16px;
+    font-size: 25px;
+    border: 1px solid #fff2df;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Center the dropdown content */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff2df;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 50%; /* Move the dropdown content to the middle */
+    transform: translateX(-50%); /* Center the dropdown content */
+    font-size: 25px;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #905c3f;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color and background on hover */
+.dropdown-content a:hover {
+    background-color: #905c3f;
+    color: #fff2df; 
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border: #fff2df 1px;
+}
+
+/* Change button color on hover */
+.dropdown:hover .dropbtn {
+    background-color: #905c3f;
+    color: #fff2df;
+}
+
+/* Style the user profile picture */
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style the dropdown user menu */
+.sub-menu-wrap {
+    position: absolute;
+    top: 12.9%;
+    right: 0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+    z-index: 2;
+}
+
+.sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+}
+
+.sub-menu-link img {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.syb-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+/* Add padding between layers */
+.fill {
+    padding: 20px 0px;
+}
+
+/* Float the logo to the left */
+.logo {
+    float: left;
+}
+
+/* Style the user image */
+.userimg {
+    position: absolute;
+    top: 1;
+    right: 40px;
+    max-width: 10%; /* Adjust the maximum width as needed */
+    border-radius: 50%; /* Make the image rounded */
+    min-width: 60px;
+    min-height: 60px;
+}
+
+.userimg img {
+    width: 100%;
+    max-height: 100px;
+    max-width: 100%; /* Ensure the image inside the container doesn't exceed its parent's width */
+    border-radius: 50%; /* Ensure the image inside the container is also rounded */
+}
+
+/* Style the links */
+.links {
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    float: left;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px 15px;
+    margin-top: auto;
+    font-size: 17px;
+    padding: 10px 30px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #fff2df; /* Set link color */
+    border: 2px solid #fff2df;
+}
+
+/* Change link color and background on hover */
+.links a:hover {
+    background-color: #fff2df;
+    transition-duration: 0.2s;
+    color: #905c3f;   
+}
+
+/* Clear floats */
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the heading */
+.h1 {
+    text-align: center;
+    border: black solid 2px;
+    width: 50%;
+    left: 50%; /* Move the dropdown content to the middle */
+    transform: translateX(50%); /* Center the dropdown content */
+}
+
+/* Style the content sections */
+.context1, .context2, .context3 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    width: 450px;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.desc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.context1 img {
+    float: left;
+    width: 450px;
+    height: 100%;
+}
+
+.context2 {
+    width: 100%;
+    height: 31.7%;
+}
+
+.context2 img {
+    float: right;
+    width: 450px;
+}
+
+.context3 {
+    width: 100%;
+    height: 38.8%;
+}
+
+.context3 img {
+    float: left;
+    width: 450px;
+}
+
+.context1, .context2, .context3 {
+    clear: both;
+    margin: 20px 0;
+}
+
+.desc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    float: right;
+    padding: 5px;
+    text-align: center;
+}
+
+.container1 {
+    padding: 10px 0px;
+    height: 1000px;
+    width: 100%;
+}
+
+/* Add space between layers */
+.fill {
+    height: 100px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 2512px) and (min-width: 1200px) {
+    .fill {
+        height: 200px;
+    }
+    .context1 img {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 620px ) {
+    .context1 {
+        height: 300px;
+    }
+    .context2 {
+        height: 300px;
+    }
+    .context3 {
+        height: 400px;
+    }
+    .context1 img, .context2 img, .context3 img {
+        width: 300px;
+        height: 300px;
+    }
+    .context1, .context2, .context3 {
+        margin-left: 4%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 910px ) {
+    .context1 img, .context2 img, .context3 img {
+        float: left;
+    }
+    .context1 img {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .context2 img {
+        margin-top: 300px;
+        margin-left: 0px;
+    }
+    .context3 img {
+        margin-top: 550px;
+        margin-left: 0px;
+    }
+    .context1, .context2, .context3 {
+        margin-left: 100px;
+        margin-top: 100px;
+        display: block;
+    }
+    .desc {
+        margin-right: 45%;
+    }
+    .fill {
+        margin-top: 460px;
+    }
+}
+
+@media only screen and (max-width: 1490px ) {
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 40px;
+    }
+    .links {
+        display: none;
+    }
+    .dropdown, .dropbtn {
+        display: unset;
+    }
+    .dropdown {
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1500px) {
+}
+
+@media only screen and (max-width: 881px) and (min-width: 0px) {
+    .logo {
+        min-width: 35%;
+    }
+    .dropdown, .dropbtn {
+        max-width: 130px;
+        margin-right: 90px;
+    }
+    .dropdown {
+        right: 10%;
+    }
+    .dropdown-content, .dropbtn {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+    .dropdown {
+        right: 20px;
+    }       
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 0px) {
+}
+
+/* Style the footer */
+footer {
+    background-color: #905c3f;
+    padding: 100px;
+    margin-top: auto;
+}

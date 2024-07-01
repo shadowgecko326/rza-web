@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="aucss.css">
+    <title>RZA - About us</title>
+</head>
+
+<body>
+<nav class="navbar">
+        <div class="logo"><a href="homepage.php"><img src="images/logo.jpg" alt="Logo" style="width:70%"></a></div>
+
+
+        <div class="sub-menu-wrap" id="submenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/user_def_img.JPG">
+                    <?php
+                session_start();
+                    if (isset($_SESSION["name"])) {
+                echo "". $_SESSION["name"];
+                } else {
+                echo "Guest";
+                }
+                ?> 
+                </div>
+     
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="images/edit.jpg" alt="">
+                    <p style="font-size:18px">Edit Profile</p>
+                    <span></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="images/settings.jpg" alt="">
+                    <p style="font-size:18px">Settings</p>
+                    <span></span>
+                </a>
+                <a href="contact_us.php" class="sub-menu-link">
+                    <img src="images/h&s.jpg" alt="">
+                    <p style="font-size:18px">Help & Support</p>
+                    <span></span>
+                </a>
+          
+                <!--  to be used for when file is turned into php file -->
+                    <div class="sub-menu-link">
+            <?php if(isset($_SESSION['id'])): ?>  
+                
+                <a class="sub-menu-link" href="logout.php">
+                <img src="images/logout.jpg" alt="">     
+                <p style="font-size:18px">Logout</p>
+                </a>
+             <?php else: ?> 
+                <a class="sub-menu-link" href="login.php">
+                <img src="images/login.jpg" alt="">     
+                <p style="font-size:18px">Login</p>
+                </a>
+             <?php endif; ?>
+            <span></span>
+        </div>
+
+            </div>
+        </div>
+  
+
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="">Zoo booking and reserve</a></li>
+                <li><a href="">Hotel booking</a></li>
+                <li><a href="learningandresourses.php">Animals and resourses</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="contact_us.php">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="userimg"><img src="Images/user_def_img.JPG" alt="Avatar" class="user-pic" onclick="toggleMenu()"></div>
+    
+    
+    <div class="dropdown">
+    <button class="dropbtn">⬇Dropdown⬇</button>
+    <div class="dropdown-content">
+        <a href="">Zoo booking and reserve</a>
+        <a href="">Hotel booking</a>
+        <a href="learningandresourses.php">Animals and resourses</a>
+        <a href="about_us.php">About us</a>
+        <a href="contact_us.php">Contact us</a>
+    </div>
+    </div>
+    </nav>
+
+
+
+
+    
+    <br><br><br><br><br>
+
+    <div class="h1">
+        <h1>name</h1>
+        </div>
+
+<br>
+
+<!-- this will contain the about us images and text-->
+
+<div class="container1">
+
+
+</div>
+
+<div class="fill"></div>
+
+
+
+
+<div class="fill"></div>
+
+
+
+
+
+
+<footer></footer>
+
+</body>
+
+<script>
+let submenu = document.getElementById("submenu");
+  function toggleMenu(){
+    submenu.classList.toggle("open-menu");
+  }
+</script>
+
+</html>
